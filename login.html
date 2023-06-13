@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    <section id="logincontainer">
+        <div class="loginimgforcontainer">
+            <div class="imgcontainer">
+                <img src="loginimg.jpg" alt="background" class="sidebg">
+            </div>
+            <div class="formcontainer">
+                <div class="realformcontainer">
+                    <div class="subtileflx">
+                        <h1 class="subtitle welcome">Welcome Back</h1>
+
+                    </div>
+                    <div class="tileflx">
+                        <h1 class="title">Login to your account</h1>
+
+                    </div>
+                    <div class="subtileflx">
+                        <h1 class="subtitle">Email</h1>
+
+                    </div>
+                    <div class="inputfeature">
+                       <input type="email" id="email" class="inputlgc" autocomplete="off" placeholder="Enter your Email">
+                       <div class="differ">
+
+                           <i id="usuccess" class="fa-regular fa-circle-check "></i>
+                           <i id="ufail" class="fa-regular fa-circle-xmark "></i>
+                       
+                       </div>
+                       <p id="uerrormsg" class="errorhidden">Username is not valid..!</p>
+                      
+                    </div>
+                    <div class="subtileflx">
+                        <h1 class="subtitle">Password</h1>
+
+                    </div>
+                    <div class="inputfeature">
+                       <input type="password" id="password" class="inputlgc" autocomplete="off" placeholder="Enter your Password">
+                       <div class="differ">
+
+                           <i id="psuccess"class="fa-regular fa-circle-check"></i>
+                           <i id="pfail"class="fa-regular fa-circle-xmark"></i>
+                       
+                       </div>
+                       <p id="perrormsg" class="errorhidden">password is not valid..!</p>
+
+
+                    </div>
+                    <div class="formfeatures">
+                        <div>
+                            <input type="checkbox" name="remember"  id="remember"><span class="subtitle ">Remember me</span>
+                            <p id="cerrormsg" class="errorhidden">Please check on the checkbox..!</p>
+
+
+                        </div>
+                        <div>
+                            <a href="#" class="forgot subtitle">Forgot password?</a>
+
+                        </div>
+                    </div>
+                    <div class="btnbut">
+                        <button id="loginnbtn"class="btn logbtn" onclick="display()">Login Now</button>
+                    </div>
+                    <div class="btnbut">
+                        <button class="googlesign btn"><img class="glogo" src="glogo.png">Or Sign-in With Google</button>
+                    </div>
+
+                    
+                </div>
+                <div class="newjoin">
+                    <span class="subtitle ">Don't have an account? <a href="#" class="subtitle forgot">Join free today</a></span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+    
+
+
+
+    <script src="https://kit.fontawesome.com/ac8dc575c3.js" crossorigin="anonymous"></script>
+    <script src="loginvalidation.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
